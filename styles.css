@@ -1,0 +1,72 @@
+
+body {
+    background-color: rgb(237, 240, 247);
+}
+
+/*HEADER SECTION*/
+header {
+    font-size: 32px;
+    border: solid 1px black;
+}
+
+h1, h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin:auto;
+}
+
+
+/*MAIN SECTION*/
+#main {
+    display: flex;
+    border: 2px solid red;
+}
+
+
+#calendar {
+    border:3px solid blue;
+    margin: auto;
+    position: relative;
+}
+
+
+#calendar td {
+    padding: 50px;
+    border: 1px solid black;
+}
+
+
+#info > table {
+    padding: 20px 25px 0px 0px;
+    border: 1px solid orange;
+}
+#user {
+    border: 1px solid green;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin-right: 25px;
+}
+
+#user td {
+    border: 1px solid green;
+    padding: 10px;
+    text-decoration: none;
+    max-width: 50%;
+}
+
+#timeAway {
+    border: 1px solid green;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin-right: 25px;
+}
+
+#timeAway td {
+    border: 1px solid green;
+    padding: 10px;
+    text-decoration: none;
+    max-width: 50%;
+}
