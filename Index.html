@@ -9,7 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet"><script src='main.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,10 +19,14 @@
     </header>
 
     <main id="main">
-
         <table id="calendar">
             <thead>
-                <tr>
+                <tr id="month_selector">
+                    <th colspan= "2" id="last_month">&lt;&lt;</th>
+                    <th colspan = "3" id="current_month">January</th>
+                    <th colspan = "2" id="next_month">&gt;&gt;</th>
+                </tr>
+                <tr id="week_days">
                     <th>Mon</th>
                     <th>Tue</th>
                     <th>Wed</th>
@@ -35,7 +39,7 @@
             
             <tbody>
                 <tr>
-                    <td>1</td>
+                    <td >1</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -43,7 +47,6 @@
                     <td>6</td>
                     <td>7</td>
                 </tr>
-                <tr></tr>
                 <tr>
                     <td>8</td>
                     <td>9</td>
@@ -84,7 +87,7 @@
         </table>
 
         <div id="info">
-            <table id="user">
+            <table id="userInfo">
                 <tr>
                     <td>Name</td>
                     <td id="name"></td>
@@ -107,7 +110,7 @@
                 </tr>
             </table>
         
-            <table id="timeAway">
+            <table id="holidayInfo">
                 <tr>
                     <td>Holiday Entitlement</td>
                     <td id="holidayEntitlement"></td>
@@ -121,12 +124,28 @@
                     <td id="remainingHoliday"></td>
                 </tr>
             </table>
+
+            <table id="paydayInfo">
+                <tr>
+                    <td>Pay Scheduele</td>
+                    <td id="payScheduele">
+                        <select name="payScheduele">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Bi-Weekly">Bi-Weekly</option>
+                            <option value="4-Weekly">4-Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Next Payday</td>
+                    <td id="nextPayday"></td>
+                </tr>
+            </table>
         </div>
     </main>
 
 
     <footer>
-        <p> yeah fuckers
 
     </footer>
 
